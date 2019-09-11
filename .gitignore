@@ -390,3 +390,9 @@ Temporary Items
 docker-compose.yml
 .env
 dist
+
+# terraform
+**/*.tfstate
+**/*.tfstate.backup
+**/.terraform/*
+**/*.dot
