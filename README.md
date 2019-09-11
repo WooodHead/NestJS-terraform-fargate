@@ -1,11 +1,17 @@
-A working example of NestJS app deployed using AWS Fargate. Forked from terraform-fargate-example & NestJS starter
+A working example of NestJS app deployed using [AWS ECS](https://aws.amazon.com/ecs/) with [AWS Fargate](https://aws.amazon.com/fargate/) as the compute engine. Based on [terraform-fargate-example](https://github.com/Oxalide/terraform-fargate-example) & [NestJS starter](https://github.com/nestjs/typescript-starter).
 
-## Build
+## Build (not automated yet, to support deployment process)
+
+### One Time Setup
 - create the ECR in AWS manually
-- build the image locally and push the image to ECR using build.sh
+- execute `ecr-login.sh`
+
+### Build and push the image
+- execute `build.sh` to build the image locally and push to ECR
 
 ## Deployment
-- using Terraform & Docker to AWS Fargate.
+- `cd deploy`
+- `terraform apply`
 
 ---
 
