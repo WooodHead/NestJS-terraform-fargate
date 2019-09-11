@@ -1,4 +1,4 @@
-Forked from terraform-fargate-example & NestJS starter
+A working example of NestJS app deployed using AWS Fargate. Forked from terraform-fargate-example & NestJS starter
 
 ## Build
 - create the ECR in AWS manually
