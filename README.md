@@ -1,4 +1,4 @@
-Forked from NextJS starter repository.
+Forked from terraform-fargate-example & NestJS starter
 
 ## Build
 - create the ECR in AWS manually
