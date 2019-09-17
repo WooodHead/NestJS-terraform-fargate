@@ -5,6 +5,7 @@ variable "aws_region" {
 
 variable "aws_account_id" {
   description = "AWS account ID"
+  default = "gautasaur"
 }
 
 variable "az_count" {
@@ -12,27 +13,7 @@ variable "az_count" {
   default     = "2"
 }
 
-variable "app_image" {
-  description = "Docker image to run in the ECS cluster"
-  default     = "177188985094.dkr.ecr.us-east-1.amazonaws.com/example/nest:latest"
-}
-
-variable "app_port" {
-  description = "Port exposed by the docker image to redirect traffic to"
-  default     = 3000
-}
-
-variable "app_count" {
-  description = "Number of docker containers to run"
-  default     = 2
-}
-
-variable "fargate_cpu" {
-  description = "Fargate instance CPU units to provision (1 vCPU = 1024 CPU units)"
-  default     = "256"
-}
-
-variable "fargate_memory" {
-  description = "Fargate instance memory to provision (in MiB)"
-  default     = "512"
+variable "app_name" {
+  description = "Name of the application"
+  default = "app"
 }
