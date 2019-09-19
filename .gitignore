@@ -394,5 +394,5 @@ dist
 # terraform
 **/*.tfstate
 **/*.tfstate.backup
-**/.terraform/*
+**/.terraform
 **/*.dot
